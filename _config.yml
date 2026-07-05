@@ -32,3 +32,6 @@ collections:
   recommendations:
     output: true
     permalink: /recommendations/:path/
+  nursery-rhymes:
+    output: true
+    permalink: /nursery-rhymes/:path/
