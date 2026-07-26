@@ -2,6 +2,6 @@
 layout: default
 ---
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h2>{{ page.title }}</h2>
   {{ content }}
 </article>
