@@ -2,9 +2,10 @@
 layout: page
 title: Recommendations
 permalink: /recommendations/
+body_class: index-page
 ---
 
-<h2>Recommendations</h2>
+<h1>Recommendations</h1>
 <ul>
 {% for recommendation in site.recommendations %}
   <li><a href="{{ recommendation.url }}">{{ recommendation.title }}</a></li>

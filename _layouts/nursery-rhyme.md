@@ -2,6 +2,8 @@
 layout: default
 ---
 <article class="post">
-  <h2>{{ page.title }}</h2>
+  <h1>{{ page.title }}</h1>
+  {% include breadcrumbs.html %}
+
   {{ content }}
 </article>

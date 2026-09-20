@@ -1,0 +1,29 @@
+{%- unless page.url == "/" -%}
+{%- assign crumb_url = "" -%}
+{%- assign crumbs = page.url | split: "/" -%}
+{%- assign parent_crumbs = "" -%}
+{%- for crumb in crumbs -%}
+  {%- if crumb != "" -%}
+    {%- assign crumb_url = crumb_url | append: "/" | append: crumb -%}
+    {%- assign crumb_url_full = crumb_url | append: "/" -%}
+    {%- assign crumb_href = crumb_url_full | relative_url -%}
+    {%- assign crumb_label = "" -%}
+    {%- for p in site.pages -%}
+      {%- if p.url == crumb_url or p.url == crumb_url_full -%}
+        {%- assign crumb_label = p.title -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if crumb_label != "" and crumb_url != page.url and crumb_url_full != page.url -%}
+      {%- assign parent_crumbs = parent_crumbs | append: '<li><a href="' | append: crumb_href | append: '">' | append: crumb_label | append: '</a></li>' -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if parent_crumbs != "" -%}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol class="breadcrumbs-list">
+    {{ parent_crumbs }}
+    <li class="current" aria-current="page">{{ page.title }}</li>
+  </ol>
+</nav>
+{%- endif -%}
+{%- endunless -%}
