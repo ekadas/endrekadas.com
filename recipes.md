@@ -2,7 +2,6 @@
 layout: page
 title: Recipes
 permalink: /recipes/
-body_class: index-page
 ---
 
 <h1>Recipes</h1>

@@ -1,5 +1,4 @@
 ---
-body_class: index-page
 ---
 
 Hello, I'm Endre, I believe that technology can improve society.
