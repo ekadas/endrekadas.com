@@ -162,6 +162,26 @@ body .markdown-body li {
   font-size: 18px;
 }
 
+.markdown-body ul:not(.breadcrumbs-list) {
+  list-style: none;
+  padding-left: 0;
+}
+
+.markdown-body ul:not(.breadcrumbs-list) li {
+  padding: 0.25em 0;
+  font-weight: 500;
+}
+
+.markdown-body .recipe ul:not(.breadcrumbs-list) {
+  list-style: disc;
+  padding-left: 2em;
+}
+
+.markdown-body .recipe ul:not(.breadcrumbs-list) li {
+  padding: 0;
+  font-weight: normal;
+}
+
 .site-header {
   background-color: #1f1f28;
   border-bottom: 1px solid #2d4f67;
