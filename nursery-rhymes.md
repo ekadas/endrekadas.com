@@ -2,7 +2,6 @@
 layout: page
 title: Nursery rhymes
 permalink: /nursery-rhymes/
-body_class: index-page
 ---
 
 <h1>Nursery rhymes</h1>

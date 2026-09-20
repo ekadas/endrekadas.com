@@ -2,7 +2,6 @@
 layout: page
 title: Recommendations
 permalink: /recommendations/
-body_class: index-page
 ---
 
 <h1>Recommendations</h1>
